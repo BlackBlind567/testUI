@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ShantanuTest</string>
+    <string name="enter_pan_number">Enter PAN number</string>
+    <string name="pan_confirmation">Providing PAN &amp; Date of Birth helps us find and fetch your KYC from a central registry by the Government of India. Learn more</string>
+    <string name="title">First of the few steps to set you up with a Bank Account</string>
+    <string name="s">S.</string>
+    <string name="pan_number">PAN NUMBER</string>
+    <string name="next">Next</string>
+</resources>
