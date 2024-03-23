@@ -43,7 +43,7 @@ class LoginFragment : BaseFragment<FragmentLoginBinding>(
                 viewModel.validateFields()
             }
         }
-
+        // validate date of birth
         binding.etDate.doOnTextChanged { text, _, _, _ ->
             viewModel.birthDateDay = text.toString()
             validateBirthDate()
