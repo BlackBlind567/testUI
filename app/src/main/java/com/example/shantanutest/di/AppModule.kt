@@ -1,9 +1,7 @@
 package com.example.shantanutest.di
 
 import android.content.Context
-import com.example.shantanutest.data.network.interfaces.LoginApiCall
 
-import com.example.shantanutest.data.network.generic.RemoteDataSource
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -17,16 +15,16 @@ import javax.inject.Singleton
 object AppModule {
 
 
-    @Singleton
-    @Provides
-    fun provideUserApi(
-        remoteDataSource: RemoteDataSource,
-        @ApplicationContext context: Context
-    ): LoginApiCall {
-        return remoteDataSource.buildApi(
-            LoginApiCall::class.java, context,
-            tokenApply = false,
-            otherUrlApply = false
-        )
-    }
+//    @Singleton
+//    @Provides
+//    fun provideUserApi(
+//        remoteDataSource: RemoteDataSource,
+//        @ApplicationContext context: Context
+//    ): LoginApiCall {
+//        return remoteDataSource.buildApi(
+//            LoginApiCall::class.java, context,
+//            tokenApply = false,
+//            otherUrlApply = false
+//        )
+//    }
 }

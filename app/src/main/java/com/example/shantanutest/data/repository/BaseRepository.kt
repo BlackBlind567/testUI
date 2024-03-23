@@ -4,11 +4,10 @@ import android.app.Application
 import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
-import com.example.shantanutest.data.network.interfaces.BaseApi
-import com.example.shantanutest.data.network.interfaces.BlindApiCall
 
 
-abstract class BaseRepository(private val api: BaseApi) : BlindApiCall {
+
+abstract class BaseRepository() {
 
     protected fun isOnline(application: Application): Boolean {
         val connectivityManager = application.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
